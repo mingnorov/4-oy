@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    background-color: #1f242d;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    color: white;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+ul {
+    display: flex;
+    gap: 43px;
+}
+
+ul a {
+    color: white;
+    transition: 500ms;
+}
+
+ul a:hover {
+    color: #00EEFF; 
+}
+
+header {
+    background-color: #1f242d;
+}
+
+.header_content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.header_left h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+}
+
+.header_left span {
+    color: #00EEFF; 
+}
+
+.header_left h2 {
+    font-size: 56px;
+    font-weight: 700;
+    color: white;
+}
+
+.header_left p {
+    color: white;
+    width: 100%; /* Adjust width for smaller screens */
+    margin-top: 21px;
+    margin-bottom: 56px;
+}
+
+.header_left button {
+    background-color: #00EEFF;
+    border-radius: 40px;
+    border: none;
+    width: 175px;
+    height: 45px;
+    margin-top: 30px;
+}
+
+h2 {
+    margin: 15px;
+    text-align: center;
+    color: white;
+}
+
+main {
+    background-color: #1f242d;
+}
+
+span {
+    color: #00EEFF;
+}
+
+.cardlar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.card {
+    width: 300px; 
+    background-color: #1f242d;
+    border: 1px solid #1f242d;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    margin: 10px; 
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.cardlar p {
+    color: white;
+}
+
+.section_img {
+    background-color: #1f242d;
+}
+
+.section_head {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+}
+
+.input_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    max-width: 500px; 
+    margin: 0 auto;   
+}
+
+.input_box {
+    width: 48%;      
+    margin-bottom: 20px; 
+}
+
+input, textarea {
+    width: 100%;     /* Adjust width for responsiveness */
+    height: 55px;    
+    font-size: 16px;   
+    text-align: center; 
+    padding: 10px;     
+    border: 1px solid #323946;
+    border-radius: 8px;
+}
+
+textarea {
+    height: 280px;
+    padding-left: 10px; /* Adjust padding */
+}
+
+section button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Add margin for spacing */
+}
+
+.footer {
+    background-color: #323946;
+}
+
+.footer_head {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+}
+
+.footer_head p {
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header_left {
+        text-align: center; /* Center the header content on small screens */
+        width: 100%; /* Ensure full width */
+    }
+    
+    .header_content {
+        flex-direction: column; /* Stack elements */
+        align-items: center; /* Center align */
+    }
+
+    .card {
+        width: 100%; /* Full width on small screens */
+        max-width: 300px; /* Limit max width */
+    }
+
+    .input_box {
+        width: 100%; /* Full width inputs */
+    }
+
+    .section_head {
+        flex-direction: column; /* Stack images vertically */
+        align-items: center; /* Center images */
+    }
+}
+
+@media (max-width: 480px) {
+    .header_left h2 {
+        font-size: 36px; /* Smaller font size */
+    }
+
+    .header_left h3 {
+        font-size: 24px; /* Smaller font size */
+    }
+}
